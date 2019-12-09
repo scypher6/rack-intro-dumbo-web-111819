@@ -4,8 +4,8 @@ class MyServer
     end
    
     def pretty_response
-      (Time.now.to_i % 2).zero? ?  ["<em>Hello</em>"] : ["<strong>Hello</strong>"]
+        [200, { 'Content-Type' => 'text/html' }, ["Hello, my name is"]]
     end
   end
    
-  run MyServer.new
+ run MyServer.new

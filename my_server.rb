@@ -4,7 +4,7 @@ class Myserver
     end
 
     def response 
-        (Time.now.to_i % 2).zero? ? ["<em>3rd Emphatic Hello</em>"] : ["<strong>3rd Strong Hello</strong>"]
+        (Time.now.to_i % 2).zero? ? ["<em>Hello</em>"] : ["<strong>Hello</strong>"]
     end
 
 end
